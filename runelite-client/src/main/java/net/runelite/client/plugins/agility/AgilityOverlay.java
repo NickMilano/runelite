@@ -102,6 +102,9 @@ class AgilityOverlay extends Overlay
 					{
 						configColor = config.getMarkColor();
 					}
+					if(Obstacles.PORTAL_OBSTACLE_IDS.contains(object.getId()) && config.highlightPortals()) {
+						configColor = config.getPortalsColor();
+					}
 
 					if (objectClickbox.contains(mousePosition.getX(), mousePosition.getY()))
 					{

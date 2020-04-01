@@ -187,4 +187,26 @@ public interface AgilityConfig extends Config
 	{
 		return Color.RED;
 	}
+
+	@ConfigItem(
+			keyName = "highlightPortals",
+			name = "Highlight Portals",
+			description = "Highlight the portals in the Prif Agility Course",
+			position = 14
+	)
+	default boolean highlightPortals()
+	{
+		return true;
+	}
+
+	@ConfigItem(
+			keyName = "highlightPortalsColor",
+			name = "Highlight Portals Color",
+			description = "Color of highlighted portals",
+			position = 15
+	)
+	default Color getPortalsColor()
+	{
+		return Color.magenta;
+	}
 }

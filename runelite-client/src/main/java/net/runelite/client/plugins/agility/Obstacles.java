@@ -106,6 +106,11 @@ class Obstacles
 		NULL_3550, NULL_10872, NULL_10873
 	);
 
+	static final Set<Integer> PORTAL_OBSTACLE_IDS = ImmutableSet.of(
+			// Prifddinas portals
+			NULL_36241, NULL_36242, NULL_36243, NULL_36244, NULL_36245, NULL_36246
+	);
+
 	static final List<Integer> TRAP_OBSTACLE_REGIONS = ImmutableList.of(12105, 13356);
 
 	static
